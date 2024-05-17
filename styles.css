@@ -1,0 +1,98 @@
+/* CSS untuk styling elemen-elemen dalam halaman HTML */
+
+/* Pengaturan background dan font */
+body {
+    background-image: url('img/bg-image.jpg'); /* Gambar latar belakang */
+    background-attachment: fixed; /* Tetapkan gambar latar belakang */
+    background-size: cover; /* Ukuran gambar latar belakang menutupi seluruh area */
+    font-family: Arial, sans-serif; /* Jenis font dan fallback jika tidak tersedia */
+    display: flex; /* Membuat tata letak flexbox */
+    flex-direction: column; /* Menetapkan arah tata letak ke vertikal */
+    align-items: center; /* Menengahkan konten secara horizontal */
+    padding: 20px; /* Ruang tambahan di sekitar konten */
+}
+
+/* Pengaturan gaya untuk elemen header dan paragraf */
+header, p {
+    font-family: "Press Start 2P", system-ui; /* Jenis font untuk elemen header dan paragraf */
+    font-weight: 200; /* Ketebalan font */
+    margin-top: 20px; /* Ruang atas */
+    margin-bottom: 20px; /* Ruang bawah */
+    text-align: center; /* Posisi teks di tengah */
+    color: white; /* Warna teks */
+}
+
+/* Pengaturan untuk container bentuk */
+.shapeContainerWrapper {
+    border: 2px solid #000; /* Border dengan ketebalan dan warna tertentu */
+    border-radius: 23px; /* Border dengan sudut bulat */
+    background-color: white; /* Warna latar belakang */
+    padding: 10px; /* Ruang tambahan di dalam kontainer */
+    margin-bottom: 20px; /* Ruang bawah */
+    max-width: 1000px; /* Lebar maksimum */
+    width: 100%; /* Lebar kontainer */
+    height: 300px; /* Tinggi kontainer */
+    overflow-y: hidden; /* Menyembunyikan overflow vertikal */
+    position: relative; /* Posisi relatif */
+    margin-left: auto; /* Posisi horizontal menjadi tengah */
+    margin-right: auto; /* Posisi horizontal menjadi tengah */
+}
+
+/* Pengaturan untuk container bentuk */
+.shapeContainer {
+    position: relative; /* Posisi relatif */
+    width: 100%; /* Lebar kontainer */
+    height: 100%; /* Tinggi kontainer */
+}
+
+/* Pengaturan untuk kontrol bentuk */
+.controls {
+    display: flex; /* Membuat tata letak flexbox */
+    flex-direction: column; /* Menetapkan arah tata letak ke vertikal */
+    align-items: center; /* Menengahkan konten secara horizontal */
+}
+
+/* Pengaturan untuk kontrol bentuk */
+.shapeControls {
+    margin-top: 10px; /* Ruang atas */
+    margin-bottom: 15px; /* Ruang bawah */
+    color: white; /* Warna teks */
+    display: flex; /* Membuat tata letak flexbox */
+    gap: 10px; /* Ruang antara elemen */
+    font-family: "Press Start 2P", system-ui; /* Jenis font untuk kontrol */
+    font-size: small; /* Ukuran font */
+}
+
+/* Pengaturan untuk bentuk */
+.shape {
+    margin: 5px; /* Ruang di sekitar bentuk */
+}
+
+/* Pengaturan untuk bentuk segitiga */
+.shape.triangle {
+    width: 0; /* Lebar nol */
+    height: 0; /* Tinggi nol */
+    border-left: 0 solid transparent; /* Sisi kiri transparan */
+    border-right: 0 solid transparent; /* Sisi kanan transparan */
+    border-bottom: 0 solid; /* Sisi bawah kosong */
+}
+
+/* Pengaturan untuk bentuk berlian */
+.shape.diamond {
+    width: 0; /* Lebar nol */
+    height: 0; /* Tinggi nol */
+    border: 0 solid transparent; /* Border kosong */
+    border-bottom: 0 solid; /* Sisi bawah kosong */
+    position: relative; /* Posisi relatif */
+}
+
+/* Pengaturan untuk bentuk berlian setelah */
+.shape.diamond::after {
+    content: ""; /* Konten kosong */
+    position: absolute; /* Posisi absolut */
+    left: 0; /* Posisi kiri */
+    width: 0; /* Lebar nol */
+    height: 0; /* Tinggi nol */
+    border: 0 solid transparent; /* Border kosong */
+    border-top: 0 solid; /* Sisi atas kosong */
+}

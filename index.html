@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tag untuk mengatur karakter set dan tampilan perangkat -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Judul halaman -->
+    <title>ChaidenGanteng - Shape Manipulation with jQuery</title>
+    <!-- Menghubungkan file CSS eksternal -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Menghubungkan Bootstrap CSS dari CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Menghubungkan font dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Danfo&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Menghubungkan library jQuery dari CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Menghubungkan file JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header halaman -->
+    <header class="header"><h1>Shape Generator Games!</h1></header>
+    <!-- Paragraf penulis -->
+    <p style="margin-top: -20px; margin-bottom: 20px">By Chaiden Ganteng Cool Abieezz 😎</p>
+    <!-- Kontainer untuk bentuk-bentuk -->
+    <div class="shapeContainerWrapper">
+        <div class="shapeContainer"></div>
+    </div>
+    <!-- Kontrol untuk menambah dan menghapus bentuk -->
+    <div class="controls">
+        <div class="shapeControls">
+            <!-- Tombol untuk menambah bentuk -->
+            <button id="addShape" class="btn btn-success">Add Shape</button>
+            <!-- Tombol untuk menghapus bentuk -->
+            <button id="removeShape" class="btn btn-danger">Remove Shape</button>
+        </div>
+        <!-- Kontrol untuk memilih jenis bentuk, warna, dan ukuran -->
+        <div class="shapeControls">
+            <!-- Label untuk memilih jenis bentuk -->
+            <label for="shapeType">Shape Type:</label>
+            <!-- Dropdown untuk memilih jenis bentuk -->
+            <select id="shapeType">
+                <option value="square">Square</option>
+                <option value="circle">Circle</option>
+                <option value="triangle">Triangle</option>
+                <option value="diamond">Diamond</option>
+            </select>
+            <!-- Label untuk memilih warna bentuk -->
+            <label for="shapeColor">Color:</label>
+            <!-- Input untuk memilih warna bentuk -->
+            <input type="color" id="shapeColor" value="#00d5ff">
+            <!-- Label untuk memilih ukuran bentuk -->
+            <label for="shapeSize">Size:</label>
+            <!-- Input untuk memilih ukuran bentuk -->
+            <input type="number" id="shapeSize" value="50" min="10" max="200">
+        </div>
+    </div>
+</body>
+</html>
